@@ -1,26 +1,31 @@
-import { screen } from "@testing-library/react";
 import styled from "styled-components";
 
 export const CardD = styled.div`
-  width: 1200px;
+  width: 550px;
   height: 600px;
+  border: 1px solid black;
   display: flex;
-  align-items: center;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  flex-direction: column;
+  font-family: Montserrat, Montserrat-fallback, sans-serif;
 
   @media (max-width: 760px) {
+    width: 350px;
     margin-top: 10%;
   }
 
   @media (max-width: 983px) {
     display: block;
   }
+
+  @media (max-width: 1224px) {
+    height: 700px;
+  }
 `;
 
 export const Title = styled.h2`
-  font-size: 34px;
+  font-size: 25px;
   font-weight: bold;
+  padding-left: 10px;
 
   @media (max-width: 760px) {
     font-size: 25px;
@@ -28,25 +33,30 @@ export const Title = styled.h2`
 `;
 
 export const Imagem = styled.img`
-  width: 500px;
-  height: 400px;
-  padding-left: 10%;
+  width: 100%;
+  height: 300px;
 
   @media (max-width: 1224px) {
-    width: 300px;
-    height: 200px;
+    width: 100%;
   }
 
   @media (max-width: 983px) {
     padding-left: 0;
   }
+
+  @media (max-width: 760px) {
+    width: 100%;
+  }
 `;
 
 export const Paragrafo = styled.p`
-  font-size: 20px;
+  font-size: 15px;
   display: flex;
   text-align: start;
   color: #555;
+  width: 500px;
+  line-height: 1.6;
+  padding-left: 10px;
 
   @media (max-width: 1224px) {
     width: 300px;
@@ -54,13 +64,17 @@ export const Paragrafo = styled.p`
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (max-width: 760px) {
+     width: 300px;
+  }
+
 `;
 
 export const Separa = styled.div`
-  padding-left: 10%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  
 
   @media (max-width: 983px) {
     align-items: center;
@@ -71,11 +85,8 @@ export const Separa = styled.div`
 export const DivButton = styled.div`
   display: flex;
   gap: 24px;
+  padding-left: 10px;
 
-  @media (max-width: 760px) {
-    padding-top: 50px;
-    padding-left: 80px;
-  }
 
   @media (max-width: 983px) {
     padding-right: 7%;

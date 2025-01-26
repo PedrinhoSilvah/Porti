@@ -7,9 +7,8 @@ export const Secao = styled.section`
   align-items: center;
   flex-direction: column;
   @media (max-width: 760px) {
-     padding-top: 10%;
-    }
-
+    padding-top: 10%;
+  }
 `;
 
 export const Parag = styled.p`
@@ -18,9 +17,9 @@ export const Parag = styled.p`
   color: #555;
 
   @media (max-width: 760px) {
-     font-size: 16px;
-     width: 95%;
-    }
+    font-size: 16px;
+    width: 95%;
+  }
 `;
 
 export const Division = styled.div`
@@ -29,5 +28,11 @@ export const Division = styled.div`
   flex-direction: column;
 `;
 
-
-
+export const AddProject = styled.div`
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+`;
